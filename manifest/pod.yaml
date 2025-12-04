@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bhalupod
+  labels:
+    app: vishalpod
+spec:
+  containers:
+  - name: bhalucontainer
+    image: bhaluacr.azurecr.io/nodetodo:latest
+    ports:
+      - containerPort: 80
